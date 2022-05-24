@@ -31,6 +31,12 @@ public class InputController : MonoBehaviour{
             else if(Input.GetKeyUp(KeyCode.RightArrow)){
                 Logics.Instance.DIR = Logics.PLAYER_DIR.NONE;
             }
+
+            if (Input.GetKeyDown(KeyCode.Space)){
+                // 공격을 할것.
+                Logics.Instance.Fire();
+            }
+
         }
 
     }

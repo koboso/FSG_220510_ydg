@@ -341,9 +341,11 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/VSSettingsProvider.ref.dll"
+"Assets/Script/Bullet.cs"
 "Assets/Script/InputController.cs"
 "Assets/Script/Logics.cs"
 "Assets/Script/TestScript.cs"
+"Assets/Vertical 2D Shooting BE4/ReadMe/Scripts/ReadmeBE4.cs"
 -langversion:8.0
 
 /deterministic
