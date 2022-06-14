@@ -90,7 +90,7 @@ public class Logics : MonoBehaviour{
                 
                 break;
             case GameState.Play:
-                PlayGame();
+                PlayerMovementLogic();
                 break;
             case GameState.Pause: 
             
@@ -145,7 +145,7 @@ public class Logics : MonoBehaviour{
     }
 
 
-    public void PlayGame() {
+    public void PlayerMovementLogic() {
         if (DIR == PLAYER_DIR.LEFT)
         {
             player.transform.position -= new Vector3(speed * Time.fixedDeltaTime, 0, 0);
