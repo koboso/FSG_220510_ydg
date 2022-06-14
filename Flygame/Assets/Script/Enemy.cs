@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour{
     public Sprite[] sprs;
-
     float speed = 0;
     public enum EnemyType { EnemyTypeA = 0, EnemyTypeB =1, EnemyTypeC =2 };
     public EnemyType enmeyType = EnemyType.EnemyTypeA;
+
 
     private void FixedUpdate(){
         // 그래서 적 객체가 포지션  Y값이 -3 보다 작으면 자동으로 비활성화 해주는 코드.

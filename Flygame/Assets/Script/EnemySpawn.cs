@@ -18,6 +18,8 @@ public class EnemySpawn : MonoBehaviour{
     }
 
     private void Update(){
+        if (Logics.Instance.GetState != Logics.GameState.Play) return;
+
         flag += Time.fixedDeltaTime;
         if(flag >= 8f){
             int rd = Random.Range(0, 3);

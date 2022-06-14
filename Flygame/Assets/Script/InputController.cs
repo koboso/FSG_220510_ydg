@@ -8,6 +8,9 @@ public class InputController : MonoBehaviour{
          * 
          */
         private void Update(){
+
+        if (Logics.Instance.GetState != Logics.GameState.Play) return;
+
             /*
              * 사용자입력,
              * 전체적인 게임 관리
