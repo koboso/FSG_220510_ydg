@@ -11,6 +11,8 @@ public class Bullet : MonoBehaviour{
     // 충돌 체크
     private void OnCollisionEnter2D(Collision2D col){
         if(col.collider.gameObject.tag == "Enemy"){
+            Logics.Instance.ShowEffect(col.collider.gameObject.transform.position);
+            Logics.Instance.IncreaseScore();
             col.collider.GetComponent<Enemy>().DestroyEnemy();
             DestroyBullet();
         }
